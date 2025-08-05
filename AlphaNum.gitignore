@@ -1,0 +1,22 @@
+import java.util.*;
+public class AlphaNum {
+    public static void main(String[] args) {
+        String str="a1b2c3d4";
+        StringBuilder letter=new StringBuilder();
+        StringBuilder digit=new StringBuilder();
+        for(char c:str.toCharArray())
+        {
+            if(Character.isLetter(c))
+            {
+                letter.append(c);
+            }
+            else if(Character.isDigit(c))
+            {
+                digit.append(c);
+            }
+        }
+        System.out.println(String.format("[\"%s\",\"%s\"]",letter,digit));
+     
+    }
+    
+}
